@@ -1,0 +1,28 @@
+package LogicalPro;
+
+public class PrimeNum {
+
+
+	 static void test(int n) {
+		
+		for(int i=2; i<=n-1; i++) 
+			{
+			int count=0;
+			for(int j=2; j<=i-1; j++) {
+			if(i%j==0)
+				{
+					count++;
+				}
+			}
+			{
+				System.out.println(i+" ");
+			}
+			}
+			}
+	public static void main(String[] args) {
+	System.out.println("main started");
+	test(20);
+
+	}
+
+}
