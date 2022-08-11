@@ -19,6 +19,7 @@ You can click the Preview link to take a look at your changes.
  package LogicalPro;
 
 public class PrimeNum {
+
 static void test(int n) {
 		int count=0;
 		for(int i=2; i<=n-1; i++) 
