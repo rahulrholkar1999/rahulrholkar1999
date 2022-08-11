@@ -11,11 +11,6 @@ You can click the Preview link to take a look at your changes.
 
  Finding Prime number or Not
  
- 
- 
- 
- 
- 
  package LogicalPro;
 
 public class PrimeNum {
