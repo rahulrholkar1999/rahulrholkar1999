@@ -142,9 +142,9 @@ public class AmstrongNum {
 }
 
 _____________________________________________________________________________________________________________________
-
 public class ConvertDesToBin {
-	public static int[] check(int num) {
+
+public static int[] check(int num) {
 		int i=0;
 		int[] res= new int[10];
 		while(num>0)	
@@ -165,6 +165,8 @@ public class ConvertDesToBin {
 	}
 
 }
+
+
 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 public class Factorial {
 
