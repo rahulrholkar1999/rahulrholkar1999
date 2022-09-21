@@ -73,24 +73,31 @@ import java.util.ArrayList;
 public class ConverBiToDesUsAL {
 
 public static ArrayList<Integer> check(int num) {
+
 ArrayList<Integer> a1= new ArrayList<Integer>();
 
 	while(num>0)
-		{
-		int rem=num%2;
-		a1.add(rem);
-		num=num/2;	
-		}
-		for(int i=a1.size()-1; i>=0; i-- ) {
-
-		System.out.print(a1.get(i)+" ");
-		}
-		return a1;
+{
+	int rem=num%2;
+		
+	a1.add(rem);
+		
+	num=num/2;	
+}
+		
+	for(int i=a1.size()-1; i>=0; i-- ) 
+	{
+        System.out.print(a1.get(i)+" ");
+	}
+		
+	return a1;
 
 
 	}
 public static void main(String[] args) {
+
 ConverBiToDesUsAL c1=new ConverBiToDesUsAL();
+
 ConverBiToDesUsAL.check(38);
 	}
 
