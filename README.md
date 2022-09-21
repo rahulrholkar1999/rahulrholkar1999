@@ -1,37 +1,34 @@
- Finding Prime number or Not
- 
+_finding Prime number
  package LogicalPro;
 
 public class PrimeNum {
 
-static void test(int n) {
-		int count=0;
-		for(int i=2; i<=n-1; i++) 
-			{
-				if(n%i==0)
+
+	static  void test(int n) {
+
+		for(int i=2; i<=n; i++) 
+		{
+			int count=0;
+			for(int j=2; j<i; j++) {
+				if(i%j==0)
 				{
 					count++;
 				}
 			}
-			System.out.println(count);
 			if(count==0)
 			{
-				System.out.println(+n+" is prime num");
+				System.out.println(i+" ");
 			}
-			else 
-			{
-				System.out.println(n+"is not prime num");
-			}
-			
 		}
+	}
+
 	public static void main(String[] args) {
-	System.out.println("main started");
-	test(2);
+		System.out.println("main started");
+		test(20);
 
 	}
 
 }
-
 _____________________________________________________________________________________________________________________
 
 import java.util.Scanner;
@@ -448,3 +445,4 @@ public class FibonacciS {
 
 
 
+_
