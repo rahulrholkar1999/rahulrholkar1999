@@ -431,23 +431,29 @@ public class FibonacciS {
 package LogicalPro;
 
 public class ConvertDesToBin {
-	public static int[] check(int num) {
-		int i=0;
-		int[] res= new int[10];
-		while(num>0)	
-		{
-			int rem=num%2;
-			res[i]=rem;
-			num=num/2;
-			i++;
-		}
-		for(int j=i-1; j>=0; j--)
-		{
-			System.out.print(res[j]+" ");
-		}
-		return res;
-	}
-	public static void main(String[] args) {
+	
+public static int[] check(int num) {
+
+int i=0;
+
+int[] res= new int[10];
+		
+while(num>0)	
+{
+int rem=num%2;
+res[i]=rem;
+num=num/2;
+i++;
+}
+	
+for(int j=i-1; j>=0; j--)
+{
+System.out.print(res[j]+" ");
+}
+return res;
+}
+public static void main(String[] args)
+	{
 
 		check(25);
 	}
