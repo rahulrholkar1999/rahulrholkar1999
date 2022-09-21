@@ -136,7 +136,7 @@ ________________________________________________________________________________
 package LogicalPro;
 
 public class ConvertDesToBin {
-public static int[] check(int num) {
+	public static int[] check(int num) {
 		int i=0;
 		int[] res= new int[10];
 		while(num>0)	
@@ -152,12 +152,13 @@ public static int[] check(int num) {
 		}
 		return res;
 	}
-public static void main(String[] args) {
+	public static void main(String[] args) {
 
 		check(25);
 	}
 
 }
+
 
 _____________________________________________________________________________________________________________________
 public class Factorial {
