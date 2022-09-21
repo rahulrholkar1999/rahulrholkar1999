@@ -447,16 +447,21 @@ i++;
 }
 	
 for(int j=i-1; j>=0; j--)
+
 {
+
 System.out.print(res[j]+" ");
+
 }
+	
 return res;
 }
+	
 public static void main(String[] args)
-	{
+{
 
-		check(25);
-	}
+	check(25);
+}
 
 }
 				 
