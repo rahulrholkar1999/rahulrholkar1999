@@ -135,8 +135,9 @@ public class AmstrongNum {
 }
 
 _____________________________________________________________________________________________________________________
-public class ConvertDesToBin {
+package LogicalPro;
 
+public class ConvertDesToBin {
 public static int[] check(int num) {
 		int i=0;
 		int[] res= new int[10];
@@ -152,13 +153,13 @@ public static int[] check(int num) {
 			System.out.print(res[j]+" ");
 		}
 		return res;
-	}public static void main(String[] args) {
+	}
+public static void main(String[] args) {
 
 		check(25);
 	}
 
 }
-
 
 _____________________________________________________________________________________________________________________
 public class Factorial {
