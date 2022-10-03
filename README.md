@@ -464,5 +464,91 @@ public static void main(String[] args)
 }
 
 }
-				 
+=======================================================================================================================================================================
+
+public class Fibonaci {
+	
+	static void test(int n) {
+	int num1=0;
+	int num2=1;
+	
+   int count=0;
+	
+	
+	while(count<n)
+	{
+		System.out.print(num1+" ");
+		int num3= num1+num2;
+		num1=num2;
+		num2=num3;
+		count++;
+	}
+	}
+	
+ public static void main(String[] args) {
+		test(10);
+	}
+	
+	}
+
+====================================================================================================================================================================
+import java.util.Scanner;
+
+public class RemVowels {
+	static void remove(String str) {
+		String str1="";
+
+		for(int i=0; i<str.length(); i++)
+		{
+			char ch=str.charAt(i);
+			if(!(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'||ch=='u'))
+			{
+				str1=str1+ch;
+			}
+
+		}
+		System.out.println(" "+str1);
+
+
+	}
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+		String str=sc.nextLine();
+
+		remove(str);
+
+	}
+
+}
+======================================================================================================================================================================
+FINDING BIGGER ARRAY
+
+
+public class SecLarArEel {
+	public static void main(String[] args) {
+
+		int[] a= {40,50,100,55,60,10,120};
+		int temp;
+
+		for(int i=0; i<a.length; i++)
+		{
+			for(int j=i+1; j<a.length; j++)
+			{
+				if(a[i]<a[j])
+				{
+					temp=a[i];
+					a[i]=a[j];
+					a[j]=temp;
+				}
+			}
+		}
+		System.out.println("Second largest element is"+a[3]);
+
+
+	}
+}
+====================================================================================================================================================================
+				
 				 
