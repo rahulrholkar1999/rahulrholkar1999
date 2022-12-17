@@ -635,3 +635,58 @@ public static void main(String[] args) {
 	}	
 	
 }				 
+_______________________________________________________________________________________________________________________________________________________________________
+	
+	import java.util.Scanner;
+
+public class RemoveZero {
+	
+	static void remove(int []n)
+	{
+		
+		int count=0;
+		for(int i=0; i<n.length; i++)
+		{
+			if(n[i]!=0)
+			{
+				count++;
+			}
+		}
+
+	
+	int[] res=new int[count];
+	
+	int x=0;
+	for(int j=0; j<n.length; j++)
+	{
+		if(n[j]!=0)
+		{
+			res[x]=n[j];
+			x++;
+		}
+	}
+	
+	for(int i=0; i<res.length; i++)
+	{
+	System.out.print(" "+res[i]);
+	}
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		
+		int size=sc.nextInt();
+		int n[]=new int[size];
+		
+		for(int i=0; i<n.length; i++)
+		{
+			n[i]=sc.nextInt();
+		}
+	remove(n);	
+	}
+  
+	
+
+}
