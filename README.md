@@ -593,4 +593,45 @@ public class SecLarArEel {
 }
 ====================================================================================================================================================================
 				
-				 
+
+import java.util.Scanner;
+
+public class FindMaxArray {
+	
+	
+	static void  test(int []n)
+	{
+		
+		for(int i=0; i<n.length-1; i++)
+		{
+			
+			if(n[i]<n[i+1])
+			{
+				
+		    int temp=n[i];
+			n[i]=n[i+1];
+			n[i+1]=temp;
+			}
+		}
+		
+	
+		System.out.println(" 1st max Array is"+n[0]);
+}
+	
+public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	    int size=sc.nextInt();
+		int n[]=new int[size];
+		
+		
+		
+		for(int i=0; i<n.length; i++)
+		{
+		 n[i]= sc.nextInt();
+		}
+		
+	
+		test(n);
+	}	
+	
+}				 
