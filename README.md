@@ -690,3 +690,48 @@ public class RemoveZero {
 	
 
 }
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+import java.util.Scanner;
+
+public class BubbleSortArray {
+
+static void test(int [] num)
+	{
+	
+	int temp;
+	for(int i=0; i<num.length-1; i++)
+	{
+
+		for(int j=0; j<num.length-1; j++)
+		{ 
+			if(num[j]>num[j+1])
+			{
+				temp=num[j];
+				num[j]=num[j+1];
+				num[j+1]=temp;
+			}
+		}
+	}
+	for(int k=0; k<num.length; k++)
+	{
+		System.out.print(num[k]+" ");
+	}
+
+	}
+	public static void main(String[] args) 
+	{
+	 Scanner sc = new Scanner(System.in);
+	 int size=sc.nextInt();
+	 int [] num=new int[size];
+	 for(int i=0; i<num.length; i++)
+	 {
+		 num[i]=sc.nextInt();
+	 }
+	test(num);
+	}
+     
+}
