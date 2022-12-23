@@ -735,3 +735,45 @@ static void test(int [] num)
 	}
      
 }
+_______________________________________________________________________________________________________________________________________________________________________
+
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class RightShift {
+
+	
+	static int[] check(int[] num, int n)
+	{
+		for(int k=1; k<=n; k++)
+		{
+			int last=num[num.length-1];
+			
+			for(int i=num.length-1; i>=1; i--)
+			{
+				num[i]=num[i-1];
+			}
+			num[0]=last;
+		}
+			
+	System.out.println(Arrays.toString(num));
+		return num;
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int  size=sc.nextInt();
+		int[] num= new int[size];
+		for(int i=0; i<size; i++)
+		{
+			num[i]=sc.nextInt();
+		}
+		int n=sc.nextInt();
+		check(num, n);
+		
+		
+	}
+	
+}
