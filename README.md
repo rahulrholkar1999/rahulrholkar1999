@@ -777,3 +777,44 @@ public class RightShift {
 	}
 	
 }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+public class ReverseWord {
+	
+	public static void  reverseWord(String S)
+	{
+		String ans="";
+		int i=S.length()-1;
+		while(i>=0)
+		{
+			while(i>=0 && S.charAt(i)=='.')
+				i--;
+			int j=i;
+			while(i>=0 && S.charAt(i)!='.')
+				i--;
+			
+			if(ans.isEmpty())
+			{
+				ans=ans.concat(S.substring(i+1, j+1));
+			}
+			else
+			{
+				ans=ans.concat("."+S.substring(i+1, j+1));
+			}
+		}
+		System.out.println(ans);
+	}
+	
+	 public static void main(String[] args) {
+		 
+		reverseWord("i.am.java.developer");
+		
+	}
+
+
+}
+
+
+
+
+
